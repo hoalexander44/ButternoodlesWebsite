@@ -5,9 +5,32 @@
 <style>
 
 div.box {
-	margin: auto;
-	width: 40%;
 	border: 5px solid gray;
+}
+
+div.centerContainer{
+	margin: auto;
+	width: 60%;
+	display:flex;
+	border: 5px solid black;
+}
+
+div.thirdSplit{
+	width: 33%;
+	height: 250px;
+	margin: 10px;
+	overflow: auto;
+}
+
+div.blogUpdate{
+	margin: 10%;
+	border: 5px solid lightgray;
+	padding: 5px;
+}
+
+div.centerText{
+	text-align: center;
+	padding: 10px;
 }
 
 </style>
@@ -15,20 +38,30 @@ div.box {
 </head>
 
 <body>
-	<div class="box">
+	<div class="centerContainer">
 
-	<h1> HELLO WORLD </h1>
 
-	<p> I created this website as an effort to display my interests, thoughts and projects in a fun and genuine way! </p>
+	<div class="box thirdSplit">
+		<h2> ART </h2>
+	</div>
 
-	<h3> Thank you for visting! </h3>
+	<div class="box thirdSplit centerText">
+		<h1> Welcome! </h1>
+		<p> I created this website as an effort to display my interests, thoughts and projects in a fun and genuine way! </p>
+	</div>
 
-	<h2> Recent Updates </h2>
 
-	<h2> Projects </h2>
+	<div class="box thirdSplit">
+		<h2> Blog Updates </h2>
+		<div class="blogUpdate">
+			Hello this is my second blog update! I want to talk about stuff and stuff and maybe some stuff? 
+		</div>
 
-	<h2> Blog </h2> 
-	
+		<div class="blogUpdate">
+			Hello this is my first blog update! Some of my interests include stuff, stuff, stuff and stuff! 
+		</div>
+	</div>
+
 	</div>
 
 </body>
