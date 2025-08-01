@@ -4,33 +4,88 @@
 
 <style>
 
-div.box {
-	border: 5px solid gray;
+/* BROWSER CSS */
+@media only screen and (min-width: 850px){
+	div.box {
+		border: 5px solid gray;
+	}
+
+	div.centerContainer{
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-left: auto;
+		margin-right: auto;
+
+		width: 800px;
+		display:flex;
+		border: 5px solid black;
+	}
+
+	div.thirdSplit{
+		width: 33%;
+		height: 250px;
+		margin: 10px;
+	}
+
+	div.blogUpdate{
+		margin: 10%;
+		border: 5px solid lightgray;
+		padding: 5px;
+	}
+
+	div.centerText{
+		text-align: center;
+	}
+
+	div.scrollable{
+		overflow: auto;
+	}
 }
 
-div.centerContainer{
-	margin: auto;
-	width: 60%;
-	display:flex;
-	border: 5px solid black;
-}
 
-div.thirdSplit{
-	width: 33%;
-	height: 250px;
-	margin: 10px;
-	overflow: auto;
-}
+/* MOBILE CSS */
+@media only screen and (max-width: 849px){
+	div.box {
+		border: 5px solid gray;
+	}
 
-div.blogUpdate{
-	margin: 10%;
-	border: 5px solid lightgray;
-	padding: 5px;
-}
+	div.centerContainer{
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 80%;
+		border: 5px solid black;
+		align-content: center;
 
-div.centerText{
-	text-align: center;
-	padding: 10px;
+	}
+
+	div.thirdSplit{
+		width: 70%;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	div.blogContainer{
+		height: 40%;
+	}
+
+	div.blogUpdate{
+		margin: 10%;
+		border: 5px solid lightgray;
+		padding: 5px;
+	}
+
+	div.centerText{
+		text-align: center;
+	}
+
+	div.scrollable{
+		overflow: auto;
+	}
+
 }
 
 </style>
@@ -39,20 +94,43 @@ div.centerText{
 
 <body>
 	<div class="centerContainer">
-
-
-	<div class="box thirdSplit">
-		<h2> ART </h2>
+		My cool title is going to go here!
 	</div>
+	<div class="centerContainer">
+
 
 	<div class="box thirdSplit centerText">
 		<h1> Welcome! </h1>
 		<p> I created this website as an effort to display my interests, thoughts and projects in a fun and genuine way! </p>
+		<p> remember to bookmark and revisit for future updates :) </p>
+		<p> newsletter </p>
+	</div>
+
+	<div class="box thirdSplit">
+		<div class="centerText">
+			<h2> ART </h2>
+		</div>
 	</div>
 
 
-	<div class="box thirdSplit">
-		<h2> Blog Updates </h2>
+	<div class="box thirdSplit scrollable blogContainer">
+		<div class="centerText">
+			<h2> Blog Updates </h2>
+		</div>
+		<div class="blogUpdate">
+			Hello this is my second blog update! I want to talk about stuff and stuff and maybe some stuff? 
+		</div>
+
+
+		<div class="blogUpdate">
+			Hello this is my second blog update! I want to talk about stuff and stuff and maybe some stuff? 
+		</div>
+
+
+		<div class="blogUpdate">
+			Hello this is my second blog update! I want to talk about stuff and stuff and maybe some stuff? 
+		</div>
+
 		<div class="blogUpdate">
 			Hello this is my second blog update! I want to talk about stuff and stuff and maybe some stuff? 
 		</div>
